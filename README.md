@@ -20,3 +20,12 @@
 
 ![image](https://user-images.githubusercontent.com/1258328/175180709-4d329ca7-a01c-44b9-b891-b610556ca5a9.png)
 
+### Subtopics covered
+- Unit Test
+  - Mockito on Repository and Service classes
+- Logging 
+  - Log levels by package see application.yaml
+- Validations
+  - Add validations on Entity Objects
+  - Process BindingResult object to handle error messages and return them as Json Object
+  - Enable messages sent to Client Postman
