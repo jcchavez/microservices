@@ -22,3 +22,7 @@ logging:
   level:
     com:
       ioSoftware: debug
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka
