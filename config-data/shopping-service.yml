@@ -1,6 +1,10 @@
 #Application Configuration
 server:
   port: 8093
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: never
 spring:
   datasource:
     url: jdbc:mysql://host.docker.internal:49153/service-shopping
