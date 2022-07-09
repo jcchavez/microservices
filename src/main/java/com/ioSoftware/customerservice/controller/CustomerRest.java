@@ -48,6 +48,17 @@ public class CustomerRest {
         return ResponseEntity.ok(customers);
 
     }
+    // retrieve a single customer
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<Customer> getCustomer(@PathVariable("id") Long id ){
+        log.info("Retrieving Customer with id {} ", id);
+        Customer customerBD = customerService.getCustomer(id);
+        if(customerBD == null){
+            log.error("Error retrieving Customer with id {} ", id);
+            return ResponseEntity.notFound().build();// http status no found
+        }
+        return ResponseEntity.ok(customerBD);
+    }
     
     @PostMapping
     public ResponseEntity<Customer> createCustomer(@Valid @RequestBody Customer customer, BindingResult result){
