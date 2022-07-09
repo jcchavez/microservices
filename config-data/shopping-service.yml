@@ -35,8 +35,7 @@ eureka:
 management:
   endpoints:
     web:
-      exposure:
-        include: hystrix.stream
+      exposure:        
         include: "*"
   endpoint:
     hystrix:
