@@ -1,0 +1,19 @@
+server:
+  port: 8091
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jcchavez/microservices.git
+          searchPaths: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+          default-label: "main"
+    bootstrap:
+      enabled: 'true'
+  security:
+    user:
+      name: root
+      password: s3cr3t

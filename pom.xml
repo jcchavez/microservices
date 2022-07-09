@@ -8,7 +8,7 @@
 		<version>2.7.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ioSoftware</groupId>
+	<groupId>com.ioSoftware.store</groupId>
 	<artifactId>config-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>config-demo</name>
