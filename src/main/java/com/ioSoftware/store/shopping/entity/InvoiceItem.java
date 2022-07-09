@@ -1,11 +1,11 @@
-package academy.digitallab.store.shopping.entity;
+package com.ioSoftware.store.shopping.entity;
 
 
+import com.ioSoftware.store.shopping.model.Product;
 import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.Positive;
-import java.io.Serializable;
 
 @Entity
 @Data
@@ -26,11 +26,8 @@ public class InvoiceItem  {
     @Transient
     private Double subTotal;
 
-    public InvoiceItem(){
-        this.quantity=(double) 0;
-        this.price=(double) 0;
-
-    }
+    @Transient
+    private Product product;
 
     public Double getSubTotal(){
         if (this.price >0  && this.quantity >0 ){
@@ -39,5 +36,9 @@ public class InvoiceItem  {
             return (double) 0;
         }
     }
+    public InvoiceItem(){
+        this.quantity=(double) 0;
+        this.price=(double) 0;
 
+    }
 }

@@ -1,4 +1,4 @@
-package academy.digitallab.store.shopping.controller;
+package com.ioSoftware.store.shopping.controller;
 
 
 import lombok.Builder;

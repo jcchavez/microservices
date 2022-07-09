@@ -1,4 +1,4 @@
-package academy.digitallab.store.shopping;
+package com.ioSoftware.store.shopping;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

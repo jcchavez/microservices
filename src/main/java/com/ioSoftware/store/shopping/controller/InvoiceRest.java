@@ -1,7 +1,7 @@
-package academy.digitallab.store.shopping.controller;
+package com.ioSoftware.store.shopping.controller;
 
-import academy.digitallab.store.shopping.service.InvoiceService;
-import academy.digitallab.store.shopping.entity.Invoice;
+import com.ioSoftware.store.shopping.service.InvoiceService;
+import com.ioSoftware.store.shopping.entity.Invoice;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
